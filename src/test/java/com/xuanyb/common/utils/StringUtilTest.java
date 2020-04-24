@@ -32,5 +32,26 @@ public class StringUtilTest {
 	public void testGenerateChineseName() {
 		System.out.println(StringUtil.generateChineseName());
 	}
+	
+	@Test 
+	public void testisNumber() {
+		String str="12345";
+		boolean number = StringUtil.isNumber(str);
+		System.out.println(number);
+	}
+	
+	@Test 
+	public void testisPhone() {
+		String str="15999999987";
+		boolean number = StringUtil.isPhone(str);
+		System.out.println(number);
+	}
+	
+	@Test 
+	public void testisEMail() {
+		String str="n123@qq.com";
+		boolean number = StringUtil.isEMail(str);
+		System.out.println(number);
+	}
 
 }
